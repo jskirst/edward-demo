@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
     <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+      window.edward_api_url = '<%= ENV['EDWARD_API'] %>';
     <script src="<%= ENV['EDWARD_JS'] %>"></script>
     <%= javascript_include_tag 'application'%>
   </body>
