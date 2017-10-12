@@ -1,24 +1,5 @@
-# README
+# Edward Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple demo application to experiment with and test [https://github.com/starfighterheavy/edward](Edward) and [https://github.com/starfighterheavy/edwards-voice](EdwardsVoice).
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You can visit the app at [https://blooming-gorge-32667.herokuapp.com/](Heroku).
