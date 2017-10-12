@@ -7,7 +7,7 @@ new Vue({
   el: '#basic-app',
   template: '#basic-template',
   methods: {
-    emitNext() {
+    emitNext: function() {
       this.$refs.steplist.stepForward();
     }
   }
