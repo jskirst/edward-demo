@@ -1,13 +1,13 @@
-<h1>Basic Demo</h1>
-
-<div id="basic-app">
+<div class="offset-container">
+  <div class="app-container">
+    <div id="basic-app"></div>
+  </div>
 </div>
 
 <script type="text/x-template" id="basic-template">
   <v-app dark>
     <v-container fluid>
-      <step-list ref="steplist"></step-list>
-      <v-btn v-on:click="emitNext">Next</v-btn>
+      <step-list ref="steplist" v-on:cta_clicked="emitNext"></step-list>
     </v-container>
   </v-app>
 </script>

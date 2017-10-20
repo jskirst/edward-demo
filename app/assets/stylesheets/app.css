@@ -1,0 +1,15 @@
+.offset-container {
+  margin-top: 115px;
+  padding-left: 20px;
+}
+
+.app-container {
+  width: 320px;
+  height: 550px;
+  margin: auto;
+  background-color: white;
+}
+
+.app-container .application {
+  min-height: 100%;
+}
