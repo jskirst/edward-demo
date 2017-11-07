@@ -8,13 +8,7 @@ class DemosController < ApplicationController
   private
 
   def load_server
-    @server ||= begin
-      if params[:server_id] == "prod"
-        "edward-api"
-      else
-        "edward-api-staging"
-      end
-    end
+    @server ||= ENV["#{params[:server_id].upcase}_URL"]
   end
 
   def load_demo

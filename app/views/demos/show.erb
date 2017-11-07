@@ -9,7 +9,7 @@
 <script type="text/x-template" id="basic-template">
   <v-app dark>
     <v-container fluid>
-      <step-list ref="steplist" v-on:cta_clicked="emitNext" api_url="https://<%= @server %>.herokuapp.com/api/workflows/<%= @demo %>/prompts" transition="slide-fade"></step-list>
+      <step-list ref="steplist" v-on:cta_clicked="emitNext" api_url="<%= @server %>api/workflows/<%= @demo %>/prompts" transition="slide-fade"></step-list>
     </v-container>
   </v-app>
 </script>
