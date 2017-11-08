@@ -9,7 +9,13 @@
 <script type="text/x-template" id="basic-template">
   <v-app dark>
     <v-container fluid>
-      <step-list ref="steplist" v-on:cta_clicked="emitNext" api_url="<%= @server %>api/workflows/<%= @demo %>/prompts" transition="slide-fade"></step-list>
+      <step-list ref="steplist" v-on:cta_clicked="emitNext" api_url="<%= @server %>api/workflows/<%= @demo %>/prompts" transition="slide-fade" :facts="<%= @facts.to_json %>"></step-list>
     </v-container>
   </v-app>
 </script>
+
+<style>
+  [bold=true] {
+    font-weight: bold;
+  }
+</style>
