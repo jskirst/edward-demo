@@ -10,10 +10,7 @@ new Vue({
   template: '#basic-template',
   methods: {
     emitNext: function() {
-      console.log(this.validClient);
-      if(this.validClient){
-        this.$refs.steplist.stepForward();
-      }
+      this.$refs.steplist.stepForward();
     }
   }
 })
