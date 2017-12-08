@@ -11,6 +11,9 @@ new Vue({
   methods: {
     emitNext: function() {
       this.$refs.steplist.stepForward();
+    },
+    stepBack: function() {
+      this.$refs.steplist.stepBack();
     }
   }
 })

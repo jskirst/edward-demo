@@ -4,6 +4,7 @@
   <v-app dark>
     <v-container fluid>
       <step-list ref="steplist" v-on:cta_clicked="emitNext" api_url="<%= @server %>api/workflows/<%= @demo %>/prompts" transition="slide-fade" :_facts="<%= @facts.to_json %>"></step-list>
+      <a href="#" @click="stepBack" class="back">Back</a>
     </v-container>
   </v-app>
 </script>

@@ -10,5 +10,15 @@
 }
 
 .part__choice {
-  border-bottom: 1px solid white;
+  border: 1px solid white;
+  padding: 3px;
+  margin: 1em;
+}
+
+a.back {
+  text-decoration: none;
+  color: white !important;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
 }
