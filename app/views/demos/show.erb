@@ -3,7 +3,7 @@
 <script type="text/x-template" id="basic-template">
   <v-app dark>
     <v-container fluid>
-      <step-list ref="steplist" v-on:cta_clicked="emitNext" api_url="<%= @server %>api/workflows/<%= @demo %>/prompts" transition="slide-fade" :_facts="<%= @facts.to_json %>"></step-list>
+    <step-list ref="steplist" v-on:cta_clicked="emitNext" api_url="<%= @server %>api/workflows/<%= @demo %>/prompts" transition="slide-fade" <%= @facts.any? ? ':_facts="' + @facts.to_json + '"' : ''%> <%= params[:geolocation] ? ":geolocation=true" : "" %>></step-list>
       <a href="#" @click="stepBack" class="back">Back</a>
     </v-container>
   </v-app>
